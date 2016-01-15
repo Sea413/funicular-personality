@@ -6,29 +6,29 @@ var age = parseInt($("input#age").val());
 var musical =$("input#musical").val();
 var alien = $("select#alien").val();
 
-if (alien === "Gearhead" && alien !== "Birdperson" && alien !== "Zeke" && age>60 && musical !=='Schwifty') {
+if (alien === "Gearhead" && alien !== "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
   $('#rick').show();
 } else {
   $('#rick').hide();
 }
 
-if (alien !== "Gearhead" && alien === "Birdperson" && alien !== "Zeke" && age>60 && musical !=='Schwifty') {
+if (alien !== "Gearhead" && alien === "Birdperson" && alien !== "Zeke" && age>50 && musical !=='Schwifty') {
   $('#morty').show();
 } else {
   $('#morty').hide();
 }
 
-if (alien !== "Gearhead" && alien !== "Birdperson" && alien === "Zeke" && age>60 && musical !=='Schwifty') {
+if (alien !== "Gearhead" && alien !== "Birdperson" && alien === "Zeke" && age>50 && musical !=='Schwifty') {
   $('#jerry').show();
 } else {
   $('#jerry').hide();
 }
-if (age< 60 && age >= 40 && (musical !=='Schwifty')) {
+if (age<=50 && age>= 31 && (musical !=='Schwifty')) {
   $('#beth').show();
 } else {
   $('#beth').hide();
 }
-if (age>1 && age<=18 && (musical !=='Schwifty')) {
+if (age>=1 && age<=30 && (musical !=='Schwifty')) {
   $('#summer').show();
 } else {
   $('#summer').hide();
